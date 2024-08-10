@@ -1,0 +1,94 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.tomato.fruit {
+    color:pink;
+}
+
+#first + p {
+    background-color:yellow;
+}
+
+#first ~ p {
+    background-color:yellow;
+}
+
+a:visited {
+    color:red;
+}
+
+.container > :nth-child(2n) {
+    background-color: blue;
+}
+ /*Task 1*/
+ #matrix {
+    border-collapse: collapse;
+    margin:20px;
+ }
+
+ #matrix td {
+    border:1px solid black;
+    width:50px;
+    height:50px;
+ }
+
+ #matrix tr:nth-child(1)>td:first-child,
+ #matrix tr:nth-child(2)>td:nth-child(2),
+ #matrix tr:nth-child(3)>td:nth-child(3),
+ #matrix tr:nth-child(4)>td:nth-child(4),
+ #matrix tr:nth-child(5)>td:last-child {
+    background-color: purple;
+ }
+
+/*Task 2*/
+
+#weekdays {
+    border-collapse: collapse;
+    width:100%;
+}
+#weekdays td, #weekdays th {
+    height:20px;
+    border:1px solid black;
+}
+
+#weekdays tr:nth-child(2n),
+#weekdays th:nth-child(2n+1),
+#weekdays td:nth-child(2n+1) {
+    background-color:rgba(150, 212, 212, 0.4);
+}
+#weekdays tr:hover:not(:first-child) {
+    background-color:blue;
+}
+
+/*3*/
+
+dl dd:nth-of-type(even) {
+    background-color:brown;
+}
+
+/*4*/
+.pseudoelements > p::first-letter {
+    color:red;
+}
+
+.pseudoelements > p::first-line {
+    font-size: 32px;
+}
+
+.pseudoelements > p:hover::before {
+    content: '🦩';
+}
+
+div[title~="words"] {
+    border:1px solid black;
+}
+
+img[alt^="aloe"] {
+    width:150px;
+    height:150px;
+    float:right;
+}
+

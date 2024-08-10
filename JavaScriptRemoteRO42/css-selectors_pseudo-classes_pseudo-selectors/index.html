@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>CSS Selectors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <span class="tomato fruit">tomato</span>
+            <div>
+                <span class="tomato">tomato</span>
+                <p id="first">
+                    <span class="tomato">Tomato</span>are botanically defined as fruits because they form from a flower and contain seeds. Still, they're most often utilized like a vegetable in cooking.
+                </p>
+                <p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTW1kueGeV6B-7txb2e0cS6LSWDuQY8wEBsQ&s" alt="weeping fig">
+                    Ficus benjamina, commonly known as weeping fig, benjamin fig or ficus tree, and often sold in stores as just ficus, is a species of flowering plant in the family Moraceae, native to Asia and Australia. It is the official tree of <a href="https://en.wikipedia.org/wiki/Bangkok">Bangkok</a>. 
+                </p>
+                <img src="https://files.nccih.nih.gov/aloe-vera-steven-foster-square.jpg" alt="aloe vera">
+                <p>  Aloe is a cactus-like plant that grows in hot, dry climates. It is cultivated in subtropical regions around the world, including the southern border areas of Texas, New Mexico, Arizona, and California.Historically, aloe has been used for skin conditions and was thought to improve baldness and promote wound healing.</p>
+                <h4>Benefits of lemon</h4>
+                <ul>
+                    <li>good source of vitamin C</li>
+                    <li>helps control weight</li>
+                    <li>prevent kidney stones</li>
+                    <li> improves digestive health</li>
+                </ul>
+            </div>
+            <p> Water makes up 93% of asparagus's composition. Asparagus is low in food energy and very low in sodium. It is a good source of <span>vitamin B6, calcium, magnesium, and zinc, and a very good source of dietary fibre, protein, beta-carotene, vitamin C, vitamin E, vitamin K, thiamin, riboflavin, rutin, niacin, folic acid, iron, phosphorus, potassium, copper, manganese, and selenium </span></p>
+        </div>
+        <br><hr><br>
+        <table id="matrix">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <table id="weekdays">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <br><hr><br>
+            <dl>
+                <dt>Wine</dt>
+                <dd>An alcoholic drink that is made from fermented grapes and therefore officially counts as a serving of fruit</dd>
+                <dd class="foo">Alcoholic drink made from grapes that is either white, red or rose.</dd>
+                <dt>Synonim</dt>
+                <dd>A word used in place of the one you can't spell</dd>
+                <dt>Pharmacist</dt>
+                <dd>A person trained just to read doctors' handwriting</dd>
+                <dt>Multitasking</dt>
+                <dd>Screwing up multiple things at once</dd>
+                <dd>Doing things in parallel</dd>
+                <dt>Diet</dt>
+                <dd>Something that always starts tomorrow</dd>
+                <dt>Tea</dt>
+                <dd>A hug in a cup</dd>
+                <dd>Hot beverage</dd>
+            </dl>
+        </table>
+            <!--
+    How can I select a p element that is the only child of a parent element?
+        p:nth-child(1):nth-last-child(1) sau p:first-child:last-child sau p:only-child
+    How can I select a p element that is the only p child of a parent element? 
+        p:nth-of-type(1):p-nth-last-of-type(1) sau p:first-of-type:last-of-type sau p:only-of-type
+    How can I select p elements that are first, fourth, seventh... (1, 4, 7, 10)
+        p:nth-child(3n + 1)
+    How can I select p elements that are first, fourth, seventh... (2, 5, 8, 11, 13..)
+        p:nth-child(3n + 2)
+    
+    How can I select the first three child li elements?
+    li:nth-child(-n + 3)
+
+    what does p:nth-child(n) do?
+    
+    -->
+        <br><hr><br>
+        <div class="pseudoelements" title="latin words">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque, quam non fringilla fringilla, ex ipsum tincidunt magna, in porta elit diam nec tellus. Proin euismod, ligula ac tristique pharetra, sem justo tincidunt libero, sit amet consectetur velit mi sit amet nunc. Quisque at efficitur odio. Etiam nec tempor nisi. Vestibulum nibh justo, pretium eget magna quis, interdum pellentesque diam. Praesent at odio luctus, ultricies felis vel, venenatis quam. Ut sit amet nunc eu libero lobortis sodales fermentum ac elit. Sed odio diam, porttitor ut lacus a, rutrum hendrerit sem. Morbi bibendum nibh ut lacus dapibus, nec ullamcorper sem molestie. Suspendisse lacinia congue lobortis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque, quam non fringilla fringilla, ex ipsum tincidunt magna, in porta elit diam nec tellus. Proin euismod, ligula ac tristique pharetra, sem justo tincidunt libero, sit amet consectetur velit mi sit amet nunc. Quisque at efficitur odio. Etiam nec tempor nisi. Vestibulum nibh justo, pretium eget magna quis, interdum pellentesque diam. Praesent at odio luctus, ultricies felis vel, venenatis quam. Ut sit amet nunc eu libero lobortis sodales fermentum ac elit. Sed odio diam, porttitor ut lacus a, rutrum hendrerit sem. Morbi bibendum nibh ut lacus dapibus, nec ullamcorper sem molestie. Suspendisse lacinia congue lobortis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque, quam non fringilla fringilla, ex ipsum tincidunt magna, in porta elit diam nec tellus. Proin euismod, ligula ac tristique pharetra, sem justo tincidunt libero, sit amet consectetur velit mi sit amet nunc. Quisque at efficitur odio. Etiam nec tempor nisi. Vestibulum nibh justo, pretium eget magna quis, interdum pellentesque diam. Praesent at odio luctus, ultricies felis vel, venenatis quam. Ut sit amet nunc eu libero lobortis sodales fermentum ac elit. Sed odio diam, porttitor ut lacus a, rutrum hendrerit sem. Morbi bibendum nibh ut lacus dapibus, nec ullamcorper sem molestie. Suspendisse lacinia congue lobortis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque, quam non fringilla fringilla, ex ipsum tincidunt magna, in porta elit diam nec tellus. Proin euismod, ligula ac tristique pharetra, sem justo tincidunt libero, sit amet consectetur velit mi sit amet nunc. Quisque at efficitur odio. Etiam nec tempor nisi. Vestibulum nibh justo, pretium eget magna quis, interdum pellentesque diam. Praesent at odio luctus, ultricies felis vel, venenatis quam. Ut sit amet nunc eu libero lobortis sodales fermentum ac elit. Sed odio diam, porttitor ut lacus a, rutrum hendrerit sem. Morbi bibendum nibh ut lacus dapibus, nec ullamcorper sem molestie. Suspendisse lacinia congue lobortis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque, quam non fringilla fringilla, ex ipsum tincidunt magna, in porta elit diam nec tellus. Proin euismod, ligula ac tristique pharetra, sem justo tincidunt libero, sit amet consectetur velit mi sit amet nunc. Quisque at efficitur odio. Etiam nec tempor nisi. Vestibulum nibh justo, pretium eget magna quis, interdum pellentesque diam. Praesent at odio luctus, ultricies felis vel, venenatis quam. Ut sit amet nunc eu libero lobortis sodales fermentum ac elit. Sed odio diam, porttitor ut lacus a, rutrum hendrerit sem. Morbi bibendum nibh ut lacus dapibus, nec ullamcorper sem molestie. Suspendisse lacinia congue lobortis.</p>
+        </div>
+    </body>
+</html>
