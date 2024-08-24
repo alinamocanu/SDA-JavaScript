@@ -1,0 +1,124 @@
+/*Transitions
+1*/
+.trans > * {
+   background-color: red;
+   width:100px;
+   height:100px;
+   border:1px solid black; 
+   transition: width 2s;
+}
+
+.trans > div:hover {
+    width:200px;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+#div6 {transition-timing-function: steps(3);}
+
+/*2*/
+.blue {
+    background-color:blue;
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    transition:width 2s, 
+        height 2s,
+        background-color 3s 3s;
+
+}
+
+.blue:hover {
+    width:200px;
+    height:200px;
+    background-color: pink;
+}
+/*Animations
+1*/
+
+.anim {
+    width:100px;
+    height:100px;
+    background-color: red;
+    border:1px solid black;
+    animation:example 2s ease-in 0.5s;
+}
+
+@keyframes example {
+    from {background-color: red;} /*0%*/
+    to {background-color: yellow;} /*100%*/
+}
+/*2*/
+.anim-infinite {
+    width:100px;
+    height:100px;
+    background-color: red;
+    border:1px solid black;
+    animation:someanim 4s 1s infinite reverse;
+}
+
+@keyframes someanim {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: blue;}
+}
+/*3*/
+
+.anim-fill-mode {
+    width:100px;
+    height:100px;
+    background-color: green;
+    border:1px solid black; 
+    animation:example 3s 3s backwards; /*animation-name animation-duration animation-delay animation-fill-mode*/
+}
+
+/*4*/
+
+.div-rotate {
+    width:100px;
+    height:100px;
+    background-color: red;
+    border:1px solid black;
+    animation:rotated 4s;
+}
+
+@keyframes rotated {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/*5*/
+
+button:hover {
+    animation:wobble 2s;
+}
+
+@keyframes wobble {
+    16.65% {
+        transform: translateX(8px);
+    }
+    33.3% {
+        transform: translateX(-6px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+canvas {
+    border:1px solid black;
+}
+
