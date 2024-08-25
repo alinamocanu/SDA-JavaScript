@@ -1,0 +1,35 @@
+#graphics {
+    border:2px solid black;
+    cursor:crosshair;
+}
+
+.tools {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:500px;
+    margin-top:20px;
+}
+
+button {
+    color:white;
+    border-radius: 5px;
+    padding:10px;
+    cursor:pointer;
+}
+
+button:first-of-type {
+    background-color:blue;
+}
+
+button:nth-of-type(2) {
+    background-color:red;
+}
+
+button:last-of-type {
+    background-color:green;
+}
+
+input[type="range"], input[type="color"] {
+    cursor:pointer;
+}
